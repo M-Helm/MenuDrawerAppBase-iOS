@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD49E4E41C2EF89B0068FEA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD49E4E31C2EF89B0068FEA5 /* main.m */; };
+		AD49E4E71C2EF89B0068FEA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD49E4E61C2EF89B0068FEA5 /* AppDelegate.m */; };
+		AD49E4EA1C2EF89B0068FEA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD49E4E91C2EF89B0068FEA5 /* ViewController.m */; };
+		AD49E4ED1C2EF89B0068FEA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD49E4EB1C2EF89B0068FEA5 /* Main.storyboard */; };
+		AD49E4EF1C2EF89B0068FEA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD49E4EE1C2EF89B0068FEA5 /* Assets.xcassets */; };
+		AD49E4F21C2EF89B0068FEA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD49E4F01C2EF89B0068FEA5 /* LaunchScreen.storyboard */; };
+		AD49E4FD1C2EF89B0068FEA5 /* MenuDrawerAppBase_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD49E4FC1C2EF89B0068FEA5 /* MenuDrawerAppBase_iOSTests.m */; };
+		AD49E5081C2EF89B0068FEA5 /* MenuDrawerAppBase_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD49E5071C2EF89B0068FEA5 /* MenuDrawerAppBase_iOSUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD49E4F91C2EF89B0068FEA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD49E4D71C2EF89A0068FEA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD49E4DE1C2EF89A0068FEA5;
+			remoteInfo = "MenuDrawerAppBase-iOS";
+		};
+		AD49E5041C2EF89B0068FEA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD49E4D71C2EF89A0068FEA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD49E4DE1C2EF89A0068FEA5;
+			remoteInfo = "MenuDrawerAppBase-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD49E4DF1C2EF89B0068FEA5 /* MenuDrawerAppBase-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MenuDrawerAppBase-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD49E4E31C2EF89B0068FEA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD49E4E51C2EF89B0068FEA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD49E4E61C2EF89B0068FEA5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD49E4E81C2EF89B0068FEA5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AD49E4E91C2EF89B0068FEA5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AD49E4EC1C2EF89B0068FEA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD49E4EE1C2EF89B0068FEA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD49E4F11C2EF89B0068FEA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD49E4F31C2EF89B0068FEA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD49E4F81C2EF89B0068FEA5 /* MenuDrawerAppBase-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MenuDrawerAppBase-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD49E4FC1C2EF89B0068FEA5 /* MenuDrawerAppBase_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuDrawerAppBase_iOSTests.m; sourceTree = "<group>"; };
+		AD49E4FE1C2EF89B0068FEA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD49E5031C2EF89B0068FEA5 /* MenuDrawerAppBase-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MenuDrawerAppBase-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD49E5071C2EF89B0068FEA5 /* MenuDrawerAppBase_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuDrawerAppBase_iOSUITests.m; sourceTree = "<group>"; };
+		AD49E5091C2EF89B0068FEA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD49E4DC1C2EF89A0068FEA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD49E4F51C2EF89B0068FEA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD49E5001C2EF89B0068FEA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD49E4D61C2EF89A0068FEA5 = {
+			isa = PBXGroup;
+			children = (
+				AD49E4E11C2EF89B0068FEA5 /* MenuDrawerAppBase-iOS */,
+				AD49E4FB1C2EF89B0068FEA5 /* MenuDrawerAppBase-iOSTests */,
+				AD49E5061C2EF89B0068FEA5 /* MenuDrawerAppBase-iOSUITests */,
+				AD49E4E01C2EF89B0068FEA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD49E4E01C2EF89B0068FEA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD49E4DF1C2EF89B0068FEA5 /* MenuDrawerAppBase-iOS.app */,
+				AD49E4F81C2EF89B0068FEA5 /* MenuDrawerAppBase-iOSTests.xctest */,
+				AD49E5031C2EF89B0068FEA5 /* MenuDrawerAppBase-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD49E4E11C2EF89B0068FEA5 /* MenuDrawerAppBase-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AD49E4E51C2EF89B0068FEA5 /* AppDelegate.h */,
+				AD49E4E61C2EF89B0068FEA5 /* AppDelegate.m */,
+				AD49E4E81C2EF89B0068FEA5 /* ViewController.h */,
+				AD49E4E91C2EF89B0068FEA5 /* ViewController.m */,
+				AD49E4EB1C2EF89B0068FEA5 /* Main.storyboard */,
+				AD49E4EE1C2EF89B0068FEA5 /* Assets.xcassets */,
+				AD49E4F01C2EF89B0068FEA5 /* LaunchScreen.storyboard */,
+				AD49E4F31C2EF89B0068FEA5 /* Info.plist */,
+				AD49E4E21C2EF89B0068FEA5 /* Supporting Files */,
+			);
+			path = "MenuDrawerAppBase-iOS";
+			sourceTree = "<group>";
+		};
+		AD49E4E21C2EF89B0068FEA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD49E4E31C2EF89B0068FEA5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD49E4FB1C2EF89B0068FEA5 /* MenuDrawerAppBase-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD49E4FC1C2EF89B0068FEA5 /* MenuDrawerAppBase_iOSTests.m */,
+				AD49E4FE1C2EF89B0068FEA5 /* Info.plist */,
+			);
+			path = "MenuDrawerAppBase-iOSTests";
+			sourceTree = "<group>";
+		};
+		AD49E5061C2EF89B0068FEA5 /* MenuDrawerAppBase-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD49E5071C2EF89B0068FEA5 /* MenuDrawerAppBase_iOSUITests.m */,
+				AD49E5091C2EF89B0068FEA5 /* Info.plist */,
+			);
+			path = "MenuDrawerAppBase-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD49E4DE1C2EF89A0068FEA5 /* MenuDrawerAppBase-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD49E50C1C2EF89B0068FEA5 /* Build configuration list for PBXNativeTarget "MenuDrawerAppBase-iOS" */;
+			buildPhases = (
+				AD49E4DB1C2EF89A0068FEA5 /* Sources */,
+				AD49E4DC1C2EF89A0068FEA5 /* Frameworks */,
+				AD49E4DD1C2EF89A0068FEA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MenuDrawerAppBase-iOS";
+			productName = "MenuDrawerAppBase-iOS";
+			productReference = AD49E4DF1C2EF89B0068FEA5 /* MenuDrawerAppBase-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD49E4F71C2EF89B0068FEA5 /* MenuDrawerAppBase-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD49E50F1C2EF89B0068FEA5 /* Build configuration list for PBXNativeTarget "MenuDrawerAppBase-iOSTests" */;
+			buildPhases = (
+				AD49E4F41C2EF89B0068FEA5 /* Sources */,
+				AD49E4F51C2EF89B0068FEA5 /* Frameworks */,
+				AD49E4F61C2EF89B0068FEA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD49E4FA1C2EF89B0068FEA5 /* PBXTargetDependency */,
+			);
+			name = "MenuDrawerAppBase-iOSTests";
+			productName = "MenuDrawerAppBase-iOSTests";
+			productReference = AD49E4F81C2EF89B0068FEA5 /* MenuDrawerAppBase-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD49E5021C2EF89B0068FEA5 /* MenuDrawerAppBase-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD49E5121C2EF89B0068FEA5 /* Build configuration list for PBXNativeTarget "MenuDrawerAppBase-iOSUITests" */;
+			buildPhases = (
+				AD49E4FF1C2EF89B0068FEA5 /* Sources */,
+				AD49E5001C2EF89B0068FEA5 /* Frameworks */,
+				AD49E5011C2EF89B0068FEA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD49E5051C2EF89B0068FEA5 /* PBXTargetDependency */,
+			);
+			name = "MenuDrawerAppBase-iOSUITests";
+			productName = "MenuDrawerAppBase-iOSUITests";
+			productReference = AD49E5031C2EF89B0068FEA5 /* MenuDrawerAppBase-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD49E4D71C2EF89A0068FEA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Matthew Helm";
+				TargetAttributes = {
+					AD49E4DE1C2EF89A0068FEA5 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					AD49E4F71C2EF89B0068FEA5 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = AD49E4DE1C2EF89A0068FEA5;
+					};
+					AD49E5021C2EF89B0068FEA5 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = AD49E4DE1C2EF89A0068FEA5;
+					};
+				};
+			};
+			buildConfigurationList = AD49E4DA1C2EF89A0068FEA5 /* Build configuration list for PBXProject "MenuDrawerAppBase-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD49E4D61C2EF89A0068FEA5;
+			productRefGroup = AD49E4E01C2EF89B0068FEA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD49E4DE1C2EF89A0068FEA5 /* MenuDrawerAppBase-iOS */,
+				AD49E4F71C2EF89B0068FEA5 /* MenuDrawerAppBase-iOSTests */,
+				AD49E5021C2EF89B0068FEA5 /* MenuDrawerAppBase-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD49E4DD1C2EF89A0068FEA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD49E4F21C2EF89B0068FEA5 /* LaunchScreen.storyboard in Resources */,
+				AD49E4EF1C2EF89B0068FEA5 /* Assets.xcassets in Resources */,
+				AD49E4ED1C2EF89B0068FEA5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD49E4F61C2EF89B0068FEA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD49E5011C2EF89B0068FEA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD49E4DB1C2EF89A0068FEA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD49E4EA1C2EF89B0068FEA5 /* ViewController.m in Sources */,
+				AD49E4E71C2EF89B0068FEA5 /* AppDelegate.m in Sources */,
+				AD49E4E41C2EF89B0068FEA5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD49E4F41C2EF89B0068FEA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD49E4FD1C2EF89B0068FEA5 /* MenuDrawerAppBase_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD49E4FF1C2EF89B0068FEA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD49E5081C2EF89B0068FEA5 /* MenuDrawerAppBase_iOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD49E4FA1C2EF89B0068FEA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD49E4DE1C2EF89A0068FEA5 /* MenuDrawerAppBase-iOS */;
+			targetProxy = AD49E4F91C2EF89B0068FEA5 /* PBXContainerItemProxy */;
+		};
+		AD49E5051C2EF89B0068FEA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD49E4DE1C2EF89A0068FEA5 /* MenuDrawerAppBase-iOS */;
+			targetProxy = AD49E5041C2EF89B0068FEA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD49E4EB1C2EF89B0068FEA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD49E4EC1C2EF89B0068FEA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD49E4F01C2EF89B0068FEA5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD49E4F11C2EF89B0068FEA5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD49E50A1C2EF89B0068FEA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD49E50B1C2EF89B0068FEA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD49E50D1C2EF89B0068FEA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "MenuDrawerAppBase-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mda.MenuDrawerAppBase-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AD49E50E1C2EF89B0068FEA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "MenuDrawerAppBase-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mda.MenuDrawerAppBase-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AD49E5101C2EF89B0068FEA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "MenuDrawerAppBase-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mda.MenuDrawerAppBase-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MenuDrawerAppBase-iOS.app/MenuDrawerAppBase-iOS";
+			};
+			name = Debug;
+		};
+		AD49E5111C2EF89B0068FEA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "MenuDrawerAppBase-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mda.MenuDrawerAppBase-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MenuDrawerAppBase-iOS.app/MenuDrawerAppBase-iOS";
+			};
+			name = Release;
+		};
+		AD49E5131C2EF89B0068FEA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MenuDrawerAppBase-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mda.MenuDrawerAppBase-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "MenuDrawerAppBase-iOS";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AD49E5141C2EF89B0068FEA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MenuDrawerAppBase-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mda.MenuDrawerAppBase-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "MenuDrawerAppBase-iOS";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD49E4DA1C2EF89A0068FEA5 /* Build configuration list for PBXProject "MenuDrawerAppBase-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD49E50A1C2EF89B0068FEA5 /* Debug */,
+				AD49E50B1C2EF89B0068FEA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD49E50C1C2EF89B0068FEA5 /* Build configuration list for PBXNativeTarget "MenuDrawerAppBase-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD49E50D1C2EF89B0068FEA5 /* Debug */,
+				AD49E50E1C2EF89B0068FEA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD49E50F1C2EF89B0068FEA5 /* Build configuration list for PBXNativeTarget "MenuDrawerAppBase-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD49E5101C2EF89B0068FEA5 /* Debug */,
+				AD49E5111C2EF89B0068FEA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD49E5121C2EF89B0068FEA5 /* Build configuration list for PBXNativeTarget "MenuDrawerAppBase-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD49E5131C2EF89B0068FEA5 /* Debug */,
+				AD49E5141C2EF89B0068FEA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD49E4D71C2EF89A0068FEA5 /* Project object */;
+}
