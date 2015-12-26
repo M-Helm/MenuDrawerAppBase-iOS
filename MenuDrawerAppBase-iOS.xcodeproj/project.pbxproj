@@ -17,6 +17,7 @@
 		AD49E5191C2EF9290068FEA5 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD49E5161C2EF9290068FEA5 /* MenuTableViewController.m */; };
 		AD49E51A1C2EF9290068FEA5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD49E5181C2EF9290068FEA5 /* MainViewController.m */; };
 		AD49E51C1C2EFA0A0068FEA5 /* ic_burger_44px.png in Resources */ = {isa = PBXBuildFile; fileRef = AD49E51B1C2EFA0A0068FEA5 /* ic_burger_44px.png */; };
+		AD49E51F1C2F1BB70068FEA5 /* SecondaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD49E51E1C2F1BB70068FEA5 /* SecondaryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		AD49E5171C2EF9290068FEA5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		AD49E5181C2EF9290068FEA5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		AD49E51B1C2EFA0A0068FEA5 /* ic_burger_44px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_burger_44px.png; sourceTree = "<group>"; };
+		AD49E51D1C2F1BA60068FEA5 /* SecondaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondaryViewController.h; sourceTree = "<group>"; };
+		AD49E51E1C2F1BB70068FEA5 /* SecondaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondaryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 				AD49E5161C2EF9290068FEA5 /* MenuTableViewController.m */,
 				AD49E5171C2EF9290068FEA5 /* MainViewController.h */,
 				AD49E5181C2EF9290068FEA5 /* MainViewController.m */,
+				AD49E51D1C2F1BA60068FEA5 /* SecondaryViewController.h */,
+				AD49E51E1C2F1BB70068FEA5 /* SecondaryViewController.m */,
 				AD49E4EB1C2EF89B0068FEA5 /* Main.storyboard */,
 				AD49E4EE1C2EF89B0068FEA5 /* Assets.xcassets */,
 				AD49E4F01C2EF89B0068FEA5 /* LaunchScreen.storyboard */,
@@ -281,6 +286,7 @@
 			files = (
 				AD49E4E71C2EF89B0068FEA5 /* AppDelegate.m in Sources */,
 				AD49E5191C2EF9290068FEA5 /* MenuTableViewController.m in Sources */,
+				AD49E51F1C2F1BB70068FEA5 /* SecondaryViewController.m in Sources */,
 				AD49E4E41C2EF89B0068FEA5 /* main.m in Sources */,
 				AD49E51A1C2EF9290068FEA5 /* MainViewController.m in Sources */,
 			);

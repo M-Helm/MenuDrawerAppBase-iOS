@@ -8,6 +8,7 @@
 
 @interface MainViewController : UIViewController
 
+-(UIView *)transitionToViewController:(UIViewController *)childViewController;
 
 @end
 

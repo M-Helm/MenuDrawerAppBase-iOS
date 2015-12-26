@@ -4,8 +4,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainViewController.h"
 
 @interface MenuTableViewController : UITableViewController <UITableViewDelegate>
+@property (nonatomic, weak) MainViewController *parentViewController;
+- (id)initWithParentViewController : (MainViewController*)parent;
 
 @end
 

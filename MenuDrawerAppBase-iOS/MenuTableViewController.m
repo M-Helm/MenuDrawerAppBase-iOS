@@ -5,14 +5,25 @@
 
 
 #import "MenuTableViewController.h"
+#import "SecondaryViewController.h"
+
 
 @interface MenuTableViewController ()
 @property NSArray *menuItemArray;
+
 
 @end
 
 
 @implementation MenuTableViewController
+
+- (id)initWithParentViewController : (MainViewController*)parent{
+    self = [super init];
+    if (self) {
+        self.parentViewController = parent;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,9 +40,17 @@
 #pragma mark mocked datasource for menu
 
 - (NSArray *)getMenuItemArray{
-    NSString *arrayStr = @"Home,Item 1,Item 2,Item 3";
-    NSArray *array = [arrayStr componentsSeparatedByString:@","];
-    
+    NSString *itemStr = @"Home,Item 1,Item 2,Item 3";
+    NSArray *arrayStr = [itemStr componentsSeparatedByString:@","];
+    NSString *itemClass = @"SecondaryViewController,SecondaryViewController,SecondaryViewController,SecondaryViewController";
+    NSArray *arrayClass = [itemClass componentsSeparatedByString:@","];
+    NSMutableArray *array = [[NSMutableArray alloc]init];
+    for(int i=0;i<arrayStr.count;i++){
+        NSMutableDictionary *dict = [[NSMutableDictionary alloc]init];
+        [dict setObject:arrayStr[i] forKey:@"Label"];
+        [dict setObject:arrayClass[i] forKey:@"Class"];
+        [array addObject:dict];
+    }
     return array;
 }
 
@@ -52,7 +71,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"CellIdentifier"];
     }
     cell.backgroundColor = [UIColor whiteColor];
-    NSString *menuStr = [NSString stringWithFormat: @"---------- %@",_menuItemArray[indexPath.row]];
+    NSDictionary *dict = _menuItemArray[indexPath.row];
+    NSString *menuStr = [NSString stringWithFormat: @"---------- %@",[dict objectForKey:@"Label"]];
     cell.textLabel.text = menuStr;
     return cell;
 }
@@ -65,7 +85,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //id selectedController = [[NSClassFromString(@"class")alloc]init];
+    NSDictionary *dict = [_menuItemArray objectAtIndex:indexPath.row];
+    NSString *classStr = [dict objectForKey:@"Class"];
+    id selectedController = [[NSClassFromString(classStr)alloc]init];
+    NSLog(@"indexPath %i str: %@", (int)indexPath.row, selectedController);
+    [self.parentViewController transitionToViewController:selectedController];
     return;
 }
 

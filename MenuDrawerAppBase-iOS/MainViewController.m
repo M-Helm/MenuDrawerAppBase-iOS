@@ -5,6 +5,7 @@
 
 #import "MainViewController.h"
 #import "MenuTableViewController.h"
+#import "SecondaryViewController.h"
 
 @interface MainViewController ()
 
@@ -42,7 +43,8 @@
     // init view if nil
     if (self.menuViewController == nil) {
         // this is where you define the view for the menu panel
-        self.menuViewController = [[MenuTableViewController alloc] init];
+        //self.menuViewController = [[MenuTableViewController alloc] init];
+        self.menuViewController = [[MenuTableViewController alloc] initWithParentViewController:self];
         [self.view addSubview:self.menuViewController.tableView];
         [self addChildViewController:self.menuViewController];
         [self.menuViewController didMoveToParentViewController:self];
@@ -52,8 +54,24 @@
     return view;
 }
 
+-(UIView *)transitionToViewController:(UIViewController *)childViewController {
+    self.showingMenuPanel = NO;
+    [self menuAnimationOut:self.menuViewController.view];
+    [self.view addSubview: childViewController.view];
+    [self addChildViewController: childViewController];
+    [self.menuViewController didMoveToParentViewController:self];
+    UIView *view = childViewController.view;
+    return view;
+}
+
 - (void)handleHamburgerSingleTap:(UITapGestureRecognizer *)recognizer {
     if(!self.showingMenuPanel){
+        for(UIViewController *viewController in self.childViewControllers){
+            if([viewController class] == [SecondaryViewController class]){
+                viewController.view.alpha = 0;
+                [viewController removeFromParentViewController];
+            }
+        }
         [self getMenuView];
         [self menuAnimationIn:self.menuViewController.view];
         self.showingMenuPanel = YES;
