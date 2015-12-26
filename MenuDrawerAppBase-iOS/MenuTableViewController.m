@@ -17,6 +17,8 @@
 
 @implementation MenuTableViewController
 
+@dynamic parentViewController;
+
 - (id)initWithParentViewController : (MainViewController*)parent{
     self = [super init];
     if (self) {
@@ -40,8 +42,10 @@
 #pragma mark mocked datasource for menu
 
 - (NSArray *)getMenuItemArray{
+    //labels
     NSString *itemStr = @"Home,Item 1,Item 2,Item 3";
     NSArray *arrayStr = [itemStr componentsSeparatedByString:@","];
+    //viewcontrollers
     NSString *itemClass = @"SecondaryViewController,SecondaryViewController,SecondaryViewController,SecondaryViewController";
     NSArray *arrayClass = [itemClass componentsSeparatedByString:@","];
     NSMutableArray *array = [[NSMutableArray alloc]init];

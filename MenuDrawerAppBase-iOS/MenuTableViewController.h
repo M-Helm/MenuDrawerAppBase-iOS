@@ -7,7 +7,7 @@
 #import "MainViewController.h"
 
 @interface MenuTableViewController : UITableViewController <UITableViewDelegate>
-@property (nonatomic, weak) MainViewController *parentViewController;
+@property (weak, nonatomic) MainViewController *parentViewController;
 - (id)initWithParentViewController : (MainViewController*)parent;
 
 @end

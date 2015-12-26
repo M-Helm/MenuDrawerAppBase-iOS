@@ -29,7 +29,7 @@
     [hamburgerButton addGestureRecognizer:singleFingerTap];
     [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithCustomView:hamburgerButton]];
     
-    //add menuController
+    //add menuController off screen
     [self getMenuView];
 
 }
@@ -39,22 +39,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(UIView *)getMenuView {
-    // init view if nil
-    if (self.menuViewController == nil) {
-        // this is where you define the view for the menu panel
-        //self.menuViewController = [[MenuTableViewController alloc] init];
-        self.menuViewController = [[MenuTableViewController alloc] initWithParentViewController:self];
-        [self.view addSubview:self.menuViewController.tableView];
-        [self addChildViewController:self.menuViewController];
-        [self.menuViewController didMoveToParentViewController:self];
-        self.menuViewController.view.frame = CGRectMake(self.view.frame.size.width * -1, 0, self.view.frame.size.width, self.view.frame.size.height);
-    }
-    UIView *view = self.menuViewController.tableView;
-    return view;
-}
-
--(UIView *)transitionToViewController:(UIViewController *)childViewController {
+- (UIView *)transitionToViewController:(UIViewController *)childViewController {
     self.showingMenuPanel = NO;
     [self menuAnimationOut:self.menuViewController.view];
     [self.view addSubview: childViewController.view];
@@ -63,6 +48,8 @@
     UIView *view = childViewController.view;
     return view;
 }
+
+#pragma mark menu button methods
 
 - (void)handleHamburgerSingleTap:(UITapGestureRecognizer *)recognizer {
     if(!self.showingMenuPanel){
@@ -81,8 +68,21 @@
     [self menuAnimationOut:self.menuViewController.view];
     self.showingMenuPanel = NO;
 }
+- (UIView *)getMenuView {
+    // init view if nil
+    if (self.menuViewController == nil) {
+        // this is where you define the view for the menu panel
+        self.menuViewController = [[MenuTableViewController alloc] initWithParentViewController:self];
+        [self.view addSubview:self.menuViewController.tableView];
+        [self addChildViewController:self.menuViewController];
+        [self.menuViewController didMoveToParentViewController:self];
+        self.menuViewController.view.frame = CGRectMake(self.view.frame.size.width * -1, 0, self.view.frame.size.width, self.view.frame.size.height);
+    }
+    UIView *view = self.menuViewController.tableView;
+    return view;
+}
 
--(void)menuAnimationOut:(UIView *)view{
+- (void)menuAnimationOut:(UIView *)view {
     [UIView animateWithDuration:0.15 delay:0.0 options:UIViewAnimationOptionCurveLinear
                      animations:^{
                          CGRect frame = CGRectMake(self.view.frame.size.width * -1, 0, self.view.frame.size.width, self.view.frame.size.height);
@@ -90,12 +90,12 @@
                      }
                      completion:^(BOOL finished) {
                          if(finished){
-                             //recognizer.view.alpha = 1;
+
                          }
                      }];
 }
 
--(void)menuAnimationIn:(UIView *)view{
+- (void)menuAnimationIn:(UIView *)view {
     [UIView animateWithDuration:0.15 delay:0.0 options:UIViewAnimationOptionCurveLinear
                      animations:^{
                          CGRect frame = CGRectMake(-88, 0, self.view.frame.size.width, self.view.frame.size.height);
@@ -103,7 +103,7 @@
                      }
                      completion:^(BOOL finished) {
                          if(finished){
-                             //recognizer.view.alpha = 1;
+
                          }
                      }];
 }
