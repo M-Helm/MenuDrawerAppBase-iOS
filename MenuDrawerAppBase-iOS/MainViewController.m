@@ -67,14 +67,10 @@
 
 - (void) SwipeRecognizer:(UISwipeGestureRecognizer *)sender {
     if ( sender.direction == UISwipeGestureRecognizerDirectionLeft ){
-        [self getMenuView];
-        [self menuAnimationOut:self.menuViewController.view];
-        self.showingMenuPanel = NO;
+        [self closeMenu];
     }
     if ( sender.direction == UISwipeGestureRecognizerDirectionRight ){
-        [self getMenuView];
-        [self menuAnimationIn:self.menuViewController.view];
-        self.showingMenuPanel = YES;
+        [self openMenu];
     }
 }
 
@@ -83,17 +79,29 @@
 
 - (void)handleHamburgerSingleTap:(UITapGestureRecognizer *)recognizer {
     if(!self.showingMenuPanel){
-        for(UIViewController *viewController in self.childViewControllers){
-            if([viewController class] == [SecondaryViewController class]){
-                viewController.view.alpha = 0;
-                [viewController removeFromParentViewController];
-            }
-        }
-        [self getMenuView];
-        [self menuAnimationIn:self.menuViewController.view];
-        self.showingMenuPanel = YES;
+        [self purgeChildControllers];
+        [self openMenu];
         return;
     }
+    [self closeMenu];
+}
+
+- (void)purgeChildControllers{
+    for(UIViewController *viewController in self.childViewControllers){
+        if([viewController class] == [SecondaryViewController class]){
+            viewController.view.alpha = 0;
+            [viewController removeFromParentViewController];
+        }
+    }
+}
+
+- (void)openMenu{
+    [self purgeChildControllers];
+    [self getMenuView];
+    [self menuAnimationIn:self.menuViewController.view];
+    self.showingMenuPanel = YES;
+}
+- (void)closeMenu{
     [self getMenuView];
     [self menuAnimationOut:self.menuViewController.view];
     self.showingMenuPanel = NO;
