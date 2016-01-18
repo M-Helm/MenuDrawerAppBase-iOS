@@ -28,9 +28,9 @@
                                             action:@selector(handleHamburgerSingleTap:)];
     [hamburgerButton addGestureRecognizer:singleFingerTap];
     [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithCustomView:hamburgerButton]];
-    
     //add menuController off screen
     [self getMenuView];
+    [self addGestureRecognizers:self.view];
 
 }
 
@@ -48,6 +48,36 @@
     UIView *view = childViewController.view;
     return view;
 }
+
+#pragma mark gesture methods
+
+- (void) addGestureRecognizers:(UIView *)subView{
+    UISwipeGestureRecognizer *leftRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(SwipeRecognizer:)];
+    leftRecognizer.direction=UISwipeGestureRecognizerDirectionLeft;
+    leftRecognizer.numberOfTouchesRequired = 1;
+    leftRecognizer.delegate = self;
+    [subView addGestureRecognizer:leftRecognizer];
+    
+    UISwipeGestureRecognizer *rightRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(SwipeRecognizer:)];
+    rightRecognizer.direction=UISwipeGestureRecognizerDirectionRight;
+    rightRecognizer.numberOfTouchesRequired = 1;
+    rightRecognizer.delegate = self;
+    [subView addGestureRecognizer:rightRecognizer];
+}
+
+- (void) SwipeRecognizer:(UISwipeGestureRecognizer *)sender {
+    if ( sender.direction == UISwipeGestureRecognizerDirectionLeft ){
+        [self getMenuView];
+        [self menuAnimationOut:self.menuViewController.view];
+        self.showingMenuPanel = NO;
+    }
+    if ( sender.direction == UISwipeGestureRecognizerDirectionRight ){
+        [self getMenuView];
+        [self menuAnimationIn:self.menuViewController.view];
+        self.showingMenuPanel = YES;
+    }
+}
+
 
 #pragma mark menu button methods
 
@@ -68,6 +98,7 @@
     [self menuAnimationOut:self.menuViewController.view];
     self.showingMenuPanel = NO;
 }
+
 - (UIView *)getMenuView {
     // init view if nil
     if (self.menuViewController == nil) {

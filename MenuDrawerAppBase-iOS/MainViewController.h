@@ -6,7 +6,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <UIGestureRecognizerDelegate>
 
 -(UIView *)transitionToViewController:(UIViewController *)childViewController;
 

@@ -9,9 +9,7 @@
 
 
 @interface MenuTableViewController ()
-@property NSArray *menuItemArray;
-
-
+    @property NSArray *menuItemArray;
 @end
 
 
