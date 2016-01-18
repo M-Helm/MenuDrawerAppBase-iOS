@@ -45,6 +45,7 @@
     [self.view addSubview: childViewController.view];
     [self addChildViewController: childViewController];
     [self.menuViewController didMoveToParentViewController:self];
+    [self.view bringSubviewToFront:self.menuViewController.tableView];
     UIView *view = childViewController.view;
     return view;
 }
@@ -79,7 +80,7 @@
 
 - (void)handleHamburgerSingleTap:(UITapGestureRecognizer *)recognizer {
     if(!self.showingMenuPanel){
-        [self purgeChildControllers];
+        //[self purgeChildControllers];
         [self openMenu];
         return;
     }
@@ -96,7 +97,6 @@
 }
 
 - (void)openMenu{
-    [self purgeChildControllers];
     [self getMenuView];
     [self menuAnimationIn:self.menuViewController.view];
     self.showingMenuPanel = YES;
@@ -118,6 +118,7 @@
         self.menuViewController.view.frame = CGRectMake(self.view.frame.size.width * -1, 0, self.view.frame.size.width, self.view.frame.size.height);
     }
     UIView *view = self.menuViewController.tableView;
+    [self.view bringSubviewToFront:view];
     return view;
 }
 
